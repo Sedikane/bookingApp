@@ -1,0 +1,48 @@
+
+<div class="scrollmenu">
+
+    <a routerLink='/welcome-home'>Welcome Home</a>
+    <a routerLink='/bookingform'>Booking form</a>
+    <a routerLink='/about'>About</a>
+    <a routerLink='/contact'>Contact</a>
+    
+    </div>
+<h1>MOGORU DRIVING SCHOOL BOOKING APPLICATION</h1>
+
+<h1>Enter your Details</h1>
+<body>
+    <form>
+      Enter your first name:<br>
+      <input type="text" name="fname" [(ngModel)]="fname"><br>
+      Enter your second name:<br>
+      <input type="text" name="sname" [(ngModel)]="sname"><br>
+      Enter your surname:<br>
+      <input type="text" name="surname" [(ngModel)]="surname"><br>
+      Enter your age:<br>
+      <input type="number" name="age" [(ngModel)]="age"><br>
+      Enter date of birth:<br>
+      <input type="number" name="birthdate" [(ngModel)]="birthdate"><br>
+      Enter your ID/Passport:<br>
+      <input type="number" name="id" [(ngModel)]="id"><br>
+      Enter your email:<br>
+      <input type="text" name="email" [(ngModel)]="email"><br>
+      Enter your contact number:<br>
+      <input type="number" name="contactno" [(ngModel)]="number"><br>
+      Date of Booking:<br>
+      <input type="number" name="bookingdate" [(ngModel)]="bookingdate"><br>
+      <br><br>
+      <button (click)="booking()">Approve</button><br>
+      <br>
+      <button type="reset" value="Reset">Cancel</button><br>
+    </form>
+</body>
+  
+<div id="left-menu">
+
+  <app-navbar *ngFor="let page of pages " [page]="page.page" [name]="page.name" [surname]="surname" [fname]="name"
+    [sname]="sname" [age]="age" [birthdate]="birthdate" [id]="id" [email]="email" [contactno]="contactno" [bookingdate]="bookingdate"> </app-navbar>
+  
+    
+  </div>
+
+  <router-outlet></router-outlet> 

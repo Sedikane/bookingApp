@@ -1,0 +1,50 @@
+
+.scrollmenu {
+    background-color: black;
+    overflow: auto;
+    white-space: nowrap;
+}
+
+.scrollmenu a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+.scrollmenu a:hover {
+    background-color: black;
+}
+
+body{
+    height: 1000px;
+}
+
+
+P{
+    text-align: center;
+    font-size: 30PX;
+     
+}
+button{
+    text-align: center;
+    border: solid;
+    border-radius: 5px;
+    cursor: pointer;
+      outline: 0;
+      display: inline-block;
+      padding: 10px 25px;
+      background-color:blue;
+      padding:10px;
+      left:0;
+      right:0;
+      margin-top:15%;
+      margin-left: 10%;
+      top:0;
+      color: white;;
+}
+.details{
+    font-size: 30PX;
+}
